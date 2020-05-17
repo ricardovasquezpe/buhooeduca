@@ -1,0 +1,19 @@
+<img name="usaMap" img-cache img-cache-src="{{this.currentStep.stepImage}}" border="0" usemap="#m_usaMap" width="100%">
+<div #mapCoordsEle></div>
+
+<div class="container-fluid contener_description">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <div class="go_back_container" (click)="this.prevStep()">
+                <span class="oi oi-arrow-left" ></span>
+                <p class="go_back_word">Retroceder</p>
+            </div>
+            <div class="go_next_container" (click)="this.nextStep()">
+                <p class="go_next_word">{{this.nextWord}}</p>
+                <span class="oi oi-arrow-right" style="display:inline-block;"></span>
+            </div>
+            <p>{{this.currentStep.stepDescription}}</p>
+        </div>
+    </div>
+</div>

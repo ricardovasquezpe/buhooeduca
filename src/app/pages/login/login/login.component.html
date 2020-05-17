@@ -1,0 +1,16 @@
+<div class="wrap-content">
+    <div class="text-center mb-3">
+        <img [src]="'assets/img/eatos_logo.png'" class="login_logo">
+    </div>
+    <div>
+        <div>
+            <myinput [placeholder]="'Username'" [type]="'text'"></myinput>
+            <myinput [placeholder]="'Password'" [type]="'password'" class="d-block mt-1"></myinput>
+        </div>
+        <mybutton [title]="'Sing In'" class="d-block mt-3"></mybutton>
+        <button type="button" class="btn mt-2 register" [routerLink]="['/login/register']">Create a new Account</button>
+        <div class="text-center">
+            <a [routerLink]="['/login/forgot']" class="link d-block mt-1">Forgot your Password?</a>
+        </div>
+    </div>
+</div>

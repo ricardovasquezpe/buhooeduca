@@ -1,0 +1,36 @@
+.wrap-content{
+    overflow: hidden;
+    width: 300px;
+}
+
+.login_logo{
+    width: 100%;
+}
+
+.register{
+    text-transform: uppercase;
+    width: 100%;
+    background-color: white;
+    border: 0.1px solid #ed2890 !important;
+    height: 48px;
+    opacity: 1 !important;
+    color: #ed2890;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    border-radius: 0.30rem !important;
+}
+
+.register:hover {
+    background-color: #ed2890;
+    border-color: #ed2890;
+    color: white;
+}
+
+.register:focus {
+    outline:none;
+}
+
+.link{
+    color: white;
+}

@@ -1,0 +1,37 @@
+.contener_description{
+    margin-top: 1rem;
+}
+
+.go_back_word{
+    font-weight: bold;
+    display:inline-block;
+    margin-left: 10px;
+}
+
+.go_back_container:hover{
+    color:black
+}
+
+.go_next_word{
+    font-weight: bold;
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.go_next_container:hover{
+    color:black
+}
+
+.go_back_container{
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    color:#00000040;
+}
+
+.go_next_container{
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    color:#00000040;
+}

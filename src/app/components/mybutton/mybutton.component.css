@@ -1,0 +1,29 @@
+button{
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #ed2890;
+    border-color: #ed2890;
+    height: 48px;
+    opacity: 1 !important;
+    color: #ffffff;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    border: none !important;
+    border-radius: 0.30rem !important;
+}
+
+button:hover {
+    background-color: #bd2073;
+    border-color: #bd2073;
+    color: #ffffff;
+}
+
+button:active {
+    background-color: #bd2073;
+    border-color: #bd2073;
+}
+
+button:focus {
+    outline:none;
+}

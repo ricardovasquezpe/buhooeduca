@@ -1,0 +1,172 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <a class="navbar-brand mx-auto py-0">
+        <h1 style="display: inline-block;font-size: 1.25rem;">Buhoo</h1>
+        <img [src]="'assets/img/buhoo_logo.png'" alt="Logo de buhooeduca" width="45px">
+        <h1 style="display: inline-block;font-size: 1.25rem;">Educa</h1>
+    </a>
+</nav>
+
+<section class="first-section">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="" style="font-size: 2.2em;font-weight: bold;">¿Qué aplicación quieres aprender hoy?</h1>
+            <h2 class="" style="font-size: 1.2em;">Da click en cualquiera de las aplicaciones para empezar a aprender!</h2>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 3%;">
+        <div class="row">
+            <div class="col-sm-3 second-square text-center" (click)="clickApp('zoom')">
+                <div class="second-square_container">
+                    <img [src]="'assets/img/apps/zoom.png'" alt="Logo de Zoom" class="second-square_img">
+                </div>
+            </div>
+            <div class="col-sm-3 first-square text-center" (click)="clickApp('meet')">
+                <div class="first-square_container">
+                    <img [src]="'assets/img/apps/meet_2.png'" alt="Logo de Google Meet" class="first-square_img">
+                </div>
+            </div>
+            <div class="col-sm-3 third-square text-center hide_xs" (click)="clickApp('classroom')">
+                <div class="third-square_container">
+                    <img [src]="'assets/img/apps/classroom.png'" alt="Logo de Google Classroom" class="third-square_img">
+                </div>
+            </div>
+
+            <div class="col-sm-3 third-square text-center show_xs" (click)="clickApp('classroom')">
+                <div class="third-square_container">
+                    <img [src]="'assets/img/apps/classroom_2.png'" alt="Logo de Google Classroom" class="third-square_img">
+                </div>
+            </div>
+
+            <div class="col-sm-3 fourth-square text-center" (click)="clickApp('skype')">
+                <div class="fourth-square_container">
+                    <img [src]="'assets/img/apps/skype.png'" alt="Logo de Skype" class="fourth-square_img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="second-section">
+    <div class="container" style="padding-top: 3%;padding-bottom: 3%;">
+        <div class="text-center">
+            <h2 class="" style="font-size: 1.1em;font-weight: bold;">Más aplicaciones para aprender</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 first-square-commin text-center" (click)="clickApp('calendar')">
+                <div class="first-square-commin_container">
+                    <img [src]="'assets/img/apps/calendar.png'" alt="Logo de Google Calendar" class="first-square-commin_img grayscale">
+                </div>
+            </div>
+            <div class="col-sm-4 second-square-commin text-center" (click)="clickApp('whatsapp')">
+                <div class="second-square-commin_container">
+                    <img [src]="'assets/img/apps/whatsapp.png'" alt="Logo de Whatsapp" class="second-square-commin_img grayscale">
+                </div>
+            </div>
+            <div class="col-sm-4 third-square-commin text-center" (click)="clickApp('slack')">
+                <div class="third-square-commin_container">
+                    <img [src]="'assets/img/apps/slack.png'" alt="Logo de Slack" class="third-square-commin_img grayscale">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid" style="padding-top: 2%;padding-bottom: 4%;">
+        <div class="row">
+            <div class="col-sm-6" >
+                  <video onloadedmetadata="this.muted = true" loop muted autoplay oncanplay="this.play()" width="100%">
+                    <source src="assets/video/tutorial_1.webm" type="video/webm" />
+                    Browser not supported
+                    </video>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <h2 class="text-center" style="font-size: 1.1em;font-weight: bold;">¿Como funciona?</h2>
+                </div>
+                <div>
+                    <p><b>1. </b>Solo tendrás que dar click en algunas de las aplicaciones en la parte de arriba y te llevará a la guía completa de esa aplicación</p>
+                    <p><b>2. </b>En la guía encontraras una sección en la parte derecha donde podrás escoger la lección que quieras aprender sobre la aplicación</p>
+                    <p><b>3. </b>En la guía ademas encontrarás en la parte de abajo cada uno de los pasos que debes seguir, podrás avanzar y retroceder la lección a tu ritmo</p>
+                    <p><b>4. </b>Por ultimo cada lección te mostrará como usar la aplicación con imagenes interactivas que te enseñarán donde hacer click en la aplicación</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="third-section">
+    <div class="container" style="padding-top: 8%;padding-bottom: 9%;">
+        <div class="text-center">
+            <h2 class="" style="font-size: 1.2em;"><b>El uso de aplicaciones para la comunicación en tiempos de COVID-19</b></h2>
+        </div>
+        <p class="text-center" style="font-size: 0.9em;">
+            Estamos en un contexto el cual nos exige continuar con nuestras labores de manera remota, en BuhooEduca te
+             enseñamos a como usar cada una de las aplicaciones de comunicación de manera rápida y sencilla. Podrás aprender a usar más de 5 
+             aplicaciones en menos de 1 día.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid" style="padding-top: 4%;padding-bottom: 4%;">
+        <div class="row">
+            <div class="col-sm-6" >
+                <div>
+                    <h2 class="text-center" style="font-size: 1.1em;font-weight: bold;">¿Que es el modelo Interactivo?</h2>
+                </div>
+                <div>
+                    <p>La mejor manera de aprender una aplicación es con la practica y en BuhooEduca podrás aprender a usarlo interactuando con la aplicación a través de nuestra guía completa</p>
+                    <p>Te enseñamos en donde dar click en cada paso que des y lo mejor de todo de manera simple y directa</p>
+                </div>
+          </div>
+          <div class="col-sm-6">
+              <video onloadedmetadata="this.muted = true" loop muted autoplay oncanplay="this.play()" width="100%">
+                <source src="assets/video/tutorial_2.webm" type="video/webm" />
+                Browser not supported
+              </video>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="fourth-section">
+    <div class="container" style="padding-top: 3%;padding-bottom: 2%;">
+        <div class="text-center">
+            <h2 class="" style="font-size: 1.1em;font-weight: bold;">Beneficios</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <p>Para Profesores</p>
+                <p style="font-size: 0.9em;">Podrás aprender a crear y dar seguimiento a tus clases, compartir documentos y comunicarte con tus alumnos</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <p>Para Alumnos</p>
+                <p style="font-size: 0.9em;">Podrás aprender a comunicarte con tus profesores y compañeros de clases</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <p>Para Empresas</p>
+                <p style="font-size: 0.9em;">Podrás aprender a comunicarte con tu equipo de trabajo y compartir información</p>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section class="fifth-section">
+    <div class="container" style="padding-top: 2%;padding-bottom: 4%;">
+        <div class="text-center">
+            <p style="font-weight: bold;">¡También brindamos asesorías personalizadas, comunícate con nosotros!</p>
+            <a style="font-weight: bold;" href="mailto:buhooeduca@gmail.com">buhooeduca@gmail.com</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container" style="padding-top: 12px;">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p style="font-size: 13px;">&copy; Copyright 2020 www.buhooeduca.com</p>
+            </div>
+        </div>
+    </div>
+</footer>

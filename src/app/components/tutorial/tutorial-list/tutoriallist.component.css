@@ -1,0 +1,49 @@
+.list-group-item{
+    cursor: pointer;
+    background-color: #f7f8fa;
+    border:0.7px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0px;
+    border-left: 0px;
+}
+
+.list-group-item:hover{
+    background-color: #f0f0f1;
+}
+
+.card>.list-group:first-child .list-group-item:first-child{
+    border-radius:0px
+}
+
+.item_number{
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0px;
+    background-color: #706f6f;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.item_description{
+    display: inline-block;
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.item_header{
+    font-weight: bold;
+    padding-left: 1.25rem;
+    padding-top: 1rem;
+}
+
+.card{
+    border-radius: 0px;
+    border:0px
+}
+
+.main_container{
+    border-left:0.7px solid rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    height: 80vh;
+}

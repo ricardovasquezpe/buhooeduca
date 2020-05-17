@@ -1,0 +1,13 @@
+<div>
+    <p class="item_header">¿Qué deseas aprender?</p>
+</div>
+<div class="main_container">
+    <div class="card">
+        <ul class="list-group list-group-flush">
+            <li *ngFor="let item of this.list; let i = index" class="list-group-item" (click)="this.sendItemListSelected(item)">
+                <p class="item_number">{{item.sessionOrder}}</p>
+                <p class="item_description">{{item.sessionTitle}}</p>
+            </li>
+        </ul>
+    </div>
+</div>

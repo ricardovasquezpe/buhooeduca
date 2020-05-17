@@ -1,0 +1,81 @@
+<div [className]="this.loading ? 'show loading' : 'hide loading'">Loading&#8230;</div>
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top" [style.background-color]="this.color" >
+    <a class="navbar-brand mx-auto py-0">
+        <img [src]="'assets/img/buhoo_logo.png'" [routerLink]="['/']" width="45px">
+        <p style="display: inline-block;margin-left: 10px;margin-right: 10px;" [className]="this.name ? '' : 'hide'">|</p>
+        <p style="display: inline-block;">{{this.name}}</p>
+    </a>
+</nav>
+
+<section [className]="this.name ? 'show main-section' : 'hide main-section'">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9" style="padding-right: 0px;padding-left: 0px;">
+                <tutorialscreen [steps]="this.steps" (tutorialScreenEvent)="onNextLessonSelected()" *ngIf="this.steps"></tutorialscreen>
+                <div>
+                  <img [src]="'assets/img/first_lesson.png'" width="100%" *ngIf="!this.steps">
+                </div>
+              </div>
+            <div class="col-md-3" style="padding-right: 0px;padding-left: 0px;">
+                <tutoriallist [list]="this.sessions" (tutorialListEvent)="onItemListSelected($event)" *ngIf="this.sessions"></tutoriallist>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section [className]="this.name ? 'hide main-section' : 'show main-section'">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+          <img [src]="'assets/img/working.png'" width="180px" style="margin-top: 10%;margin-bottom: 30px;">
+          <p>Estamos trabajando aun en esta aplicación para que puedas aprender de la manera mas sencilla</p>
+          <button type="button" class="btn btn-secondary" [routerLink]="['/']">Ver mas aplicaciones!</button>
+        </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Bienvenido!</h5>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <p class="text-center" style="display:inline-block">Gracias por usar</p>
+          <img style="display:inline-block" [src]="'assets/img/buhoo_logo.png'" width="50px">
+          <p class="text-center" style="display:inline-block">BuhooEduca!</p>
+        </div>
+        <p class="text-center"><b>Algunas indicaciones antes de empezar</b></p>
+        <img [src]="'assets/img/welcome.png'" width="100%">
+        <p><b>1. </b> En la parte derecha de la pantalla encontrarás una lista cada una de las lecciones que necesitas saber acerca de la aplicación</p>
+        <p><b>2. </b> En la parte inferior podrás ver el detalle de la lección y podrás retroceder o avanzar paso a paso con las flechas "Retroceder" y "Siguiente"</p>
+        <p><b>3. </b> En medio de tu pantalla podrás ver la aplicación e interacturar con la pantalla dando clicks con tu mouse!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Comenzar!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="finishModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Muy buen trabajo!</h5>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Has aprendido a usar la aplicación en BuhooEduca!</p>
+        <div class="text-center"><img [src]="'assets/img/buhoo_logo.png'"></div>
+        <br/>
+        <p class="text-center"><b>Si te gusto, porfavor comparte esta guia con tus amigos, profesores y compañeros de trabajo!</b></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="this.goHome()">Ver mas aplicaciones</button>
+      </div>
+    </div>
+  </div>
+</div>
