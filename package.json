@@ -32,7 +32,7 @@
     "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.3.1",
     "image-map-resizer": "^1.0.10",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng-imgcache": "^1.0.1",
     "open-iconic": "^1.1.1",
     "popper": "^1.0.1",
